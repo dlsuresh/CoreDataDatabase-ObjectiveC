@@ -8,7 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITextViewDelegate>
+
+- (IBAction)add:(id)sender;
+
+@property (strong, nonatomic) IBOutlet UITextField *nameTextField;
+
+@property (strong, nonatomic) IBOutlet UITextField *idTextField;
+
+@property (strong, nonatomic) IBOutlet UITextField *designationTextField;
+
+@property (strong, nonatomic) IBOutlet UITextField *companyTextField;
+
+
 
 
 @end
